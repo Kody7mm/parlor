@@ -8,3 +8,49 @@
   <script src="js/scripts.js"></script>
   <title>Pizza Parlor</title>
 </head>
+
+<body>
+  <div class="container">
+    <div class="column1">
+      <div class="form">
+        <h1 class="title">Pizza Parlor!</h3>
+          <img src="img/pizza.jpeg" class="img1" alt="Tears our your heart">
+          <h2 class="orderForm">Online Order Form</h2>
+          <form id="order-form" id="size">
+            <h5>Size:</h5>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="small" id="small">
+                Small $5
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="medium" id="medium">
+                Medium $10
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="large" id="large">
+                Large $15
+              </label>
+            </div>
+            <div class="column2">
+              <h5>Toppings: $2 Each </h5>
+              <ol>
+                <input type="checkbox" name="pizzaTopping" value="Pepperoni"> Pepperoni
+                <input type="checkbox" name="pizzaTopping" value="Sausage"> Sausage
+                <input type="checkbox" name="pizzaTopping" value="Jalapenos"> Jalapenos
+                <input type="checkbox" name="pizzaTopping" value="Onions"> Onions
+                <input type="checkbox" name="pizzaTopping" value="Olives"> Olives
+              </ol>
+              <ol>
+                <input type="checkbox" name="pizzaTopping" value="Cheese"> Cheese
+                <input type="checkbox" name="pizzaTopping" value="Mushrooms"> Mushrooms
+                <input type="checkbox" name="pizzaTopping" value="Bacon"> Bacon
+                <input type="checkbox" name="pizzaTopping" value="Peppers"> Peppers
+                <input type="checkbox" name="pizzaTopping" value="Onions"> Onions
+              </ol>
+              <button class="btn-outline-danger" type="submit">Submit Order</button>
+            </div>
