@@ -1,4 +1,3 @@
-
 // Business Logic
 function Pizza(size, toppings) {
   this.size = size,
@@ -19,3 +18,30 @@ Pizza.prototype.calculateToppings = function(toppings) {
     this.price += 2;
   }
 };
+
+// UI Logic:
+
+$(document).ready(function () {
+  $("form#order-form").submit(function (event) {
+    event.preventDefault();
+
+    let sizeChoice = $("input:radio[name=size]:checked").val();
+    let toppingChoice = $("input:checkbox[name=pizzaTopping]:checked");
+    let toppingsArray = [];
+    toppingChoice.each(function () {
+      toppingsArray.push($(this).val());
+    })
+
+    let userPizza = new Pizza(sizeChoice, toppingsArray);
+    userPizza.calculateSize();
+    userPizza.calculateToppings();
+
+    $(".orderConfirm").show();
+    $("#sizeChoice").text(userPizza.size);
+
+    let toppingString = (userPizza.toppings).join(", ");
+    $("#toppingsChoice").text(toppingString);
+    $("#costOutput").text("$" + userPizza.price);
+
+  })
+});
