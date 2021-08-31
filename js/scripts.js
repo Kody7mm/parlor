@@ -9,8 +9,10 @@ Pizza.prototype.calculateSize = function(size) {
     this.price += 5;
   } else if (this.size === "medium") {
     this.price += 10;
-  } else {
+  } else if (this.size === "large") {
     this.price += 15;
+  } else {
+    this.price += 20;
   }
 }
 Pizza.prototype.calculateToppings = function(toppings) {
