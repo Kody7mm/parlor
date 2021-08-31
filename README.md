@@ -16,15 +16,15 @@ This website was built to allow user to order a pizza online!
 
 ## Setup/Installation Requirement
 * [Portfolio](https://github.com/kody7mm/)
-* [Project Page](https://github.com/kody7mm/pizzza-parlor)
+* [Project Page](https://github.com/kody7mm/parlor)
 * To download, then view or edit a local copy yourself, follow the instructions below:  
 
   * Clone the repository to a local directory using the command-line tool `git` ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github)).  
     `$ cd ~/[directory]/[path]/[of]/[choice]/`  
-    `$ git clone https://github.com/kody7mm/pizza-parlor.git`  
+    `$ git clone https://github.com/kody7mm/parlor.git`  
   
   * Navigate to the top level of the project directory.  
-    `$ cd pizza-parlor/`   
+    `$ cd parlor/`   
 
   * To view the site locally, open the file called `index.html` in your default browser.  
     `$ open index.html`  
